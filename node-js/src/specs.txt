@@ -1,0 +1,60 @@
+    //upsert
+    // try {
+    //     const upsertUser = await PrismaConn.user.upsert({
+    //         where:{ email: "testing@gmail.com" },
+    //         create:{ name: "testing", email: "testing@gmail.com"},
+    //         update:{ lastname: "testing user"}
+    //     })
+    //     console.log(upsertUser)
+    // } catch (error) {
+    //     console.log(errpr.meta.cause)
+    // }
+    
+    //update user
+    // try {
+    //     const updatedUser = await PrismaConn.user.update({
+    //         where:{
+    //             id: 5
+    //         },
+    //         data: {
+    //             lastname: "test"
+    //         }
+    //     })
+    //     console.log(updatedUser)
+    // } catch (error) {
+    //     console.log(error.meta.cause)
+    // }
+
+    //delete user
+    //    try {
+    //     const deletedUser = await PrismaConn.user.delete({
+    //         where:{
+    //             id: 1
+    //         }
+    //     })
+    //    } catch (error) {
+    //     console.log(error.meta.cause)
+    //    }
+
+    // find user
+    // const user = await PrismaConn.user.findFirst({
+    //     where: {
+    //         OR: [
+    //             {id: 2},
+    //             {email: "test@gmail.com"}
+    //         ]
+    //     }
+    // })
+
+    // find users
+    // const user = await PrismaConn.user.findMany()
+    // user.map(user => console.log(`${user.id} - ${user.name}`))
+
+    // Create User
+    // const newUser = await PrismaConn.user.create({
+    //     data: {
+    //         email:"test@gmail.com",
+    //         name:"test"
+    //     }
+    // })
+    // console.log(newUser)
